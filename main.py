@@ -15,7 +15,7 @@ with open("credentials.json") as f:
 client = None  # Initialize the Twilio client outside the route handler
 
 # Define a route to handle GET requests
-@app.get("/make_call/{credential_name}")
+@app.post("/make_call/{credential_name}")
 async def make_call(credential_name: str):
     # Check if the specified credential exists
     if credential_name not in twilio_credentials:
