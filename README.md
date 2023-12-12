@@ -48,7 +48,7 @@ The `credentials.json` file should have the following format:
 To build and run the Docker container, execute the following command in the project directory:
 
 ```
-docker-compose up --build
+docker-compose -p twilio-call up --build
 ```
 
 ### Make a call
