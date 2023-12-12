@@ -62,7 +62,7 @@ docker-compose -p twilio-call up --build
 To initiate a Twilio call, you can send a GET request to the `/make_call/{credential_name}` endpoint, where credential_name represents the name of the credential you want to use for the call. Replace `{credential_name}` with the actual credential name you intend to use.
 Example:
 ```
-curl http://localhost:8000/make_call/thaopt
+curl -X GET http://localhost:8000/make_call/thaopt
 ```
 Replace `thaopt` with the specific credential name associated with your Twilio account. Adjust the endpoint accordingly for other credentials.
 This request triggers the FastAPI application to make a Twilio call using the specified credential. Check the console or logs for any relevant information about the call process.
