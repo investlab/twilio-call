@@ -11,6 +11,7 @@ Follow these instructions to get a copy of the project up and running on your lo
 - **Docker:** [Installation Guide](https://docs.docker.com/get-docker/)
 - **Docker Compose:** [Installation Guide](https://docs.docker.com/compose/install/)
 
+
 ### Clone the Repository
 
 ```bash
@@ -43,7 +44,13 @@ The `credentials.json` file should have the following format:
     }
 }
 ```
-### Build and Run the Docker Container
+## Run
+### Option 1: Quick run
+```
+docker run -p 8000:8000 -v /path/to/credentials.json:/app/credentials.json wisoez/twilio-call:1.0.0
+```
+
+### Option 2: Build and Run the Docker Container
 
 To build and run the Docker container, execute the following command in the project directory:
 
