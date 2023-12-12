@@ -47,7 +47,11 @@ The `credentials.json` file should have the following format:
 ## Run
 ### Option 1: Quick run
 ```
-docker run -p 8000:8000 -v /path/to/credentials.json:/app/credentials.json wisoez/twilio-call:1.0.0
+# GET
+docker run -p 8000:8000 -v /path/to/credentials.json:/app/credentials.json wisoez/twilio-call:1.0.0-get-method
+or
+# POST
+docker run -p 8000:8000 -v /path/to/credentials.json:/app/credentials.json wisoez/twilio-call:1.0.0-post-method
 ```
 
 ### Option 2: Build and Run the Docker Container
