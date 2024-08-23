@@ -70,3 +70,6 @@ curl -X POST http://localhost:8000/make_call/thaopt
 ```
 Replace `thaopt` with the specific credential name associated with your Twilio account. Adjust the endpoint accordingly for other credentials.
 This request triggers the FastAPI application to make a Twilio call using the specified credential. Check the console or logs for any relevant information about the call process.
+
+### Note
+Edit Twilio api "http://demo.twilio.com/docs/voice.xml" to new api (line 31 in main.py)
