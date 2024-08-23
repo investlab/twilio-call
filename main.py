@@ -28,7 +28,7 @@ async def make_call(credential_name: str):
 
     # Make a Twilio call
     call = client.calls.create(
-        url="http://demo.twilio.com/docs/voice.xml",
+        url="https://demo.twilio.com/welcome/voice/",
         to=credential["to_phone_number"],
         from_=credential["from_phone_number"]
     )
